@@ -1,35 +1,27 @@
-#Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby)
-*Just-add-water CSS animation*
+#polymer.animate.css 
 
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+##### Original Author: Dan Eden 
+##### Adapted by: Andrew Stacy
+
+`polymer.animate.css` is a [Polymer](https://www.polymer-project.org/1.0/) adaptation of the `animate.css` library found [here](https://github.com/daneden/animate.css). It wraps the original library so it can be consumed by Polymer projects.
+
+`Animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ## Installation
 
 To install via Bower, simply do the following:
 
 ```bash
-$ bower install animate.css --save
-```
-or you can install via npm:
-
-```bash
-$ npm install animate.css --save
+$ bower install polymer.animate.css --save
 ```
 
-##Basic Usage
-1. Include the stylesheet on your document's `<head>`
+## Basic Usage
+1. Import the styles into your Polymer components:
 
   ```html
-  <head>
-    <link rel="stylesheet" href="animate.min.css">
-  </head>
+  <link rel="import" href="[bower_components_path]/polymer.animate.css/polymer.animate.css.html">
   ```
-  or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
-  ```html
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  </head>
-  ```
+
 2. Add the class `animated` to the element you want to animate.
  You may also want to include the class `infinite` for an infinite loop.
 
@@ -117,74 +109,6 @@ Full example:
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
-
-##Usage
-To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
-
-```html
-<head>
-  <link rel="stylesheet" href="animate.min.css">
-</head>
-```
-or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
-```html
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-</head>
-```
-
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
-
-```javascript
-$('#yourElement').addClass('animated bounceOutLeft');
-```
-
-You can also detect when an animation ends:
-
-<!--
-Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
-
-http://api.jquery.com/one/
--->
-
-```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
-```
-
-[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
-
-**Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
-
-You can also extend jQuery to add a function that does it all for you:
-
-```javascript
-$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-});
-```
-
-And use it like this:
-
-```javascript
-$('#yourElement').animateCss('bounce');
-```
-
-You can change the duration of your animations, add a delay or change the number of times that it plays:
-
-```css
-#yourElement {
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
-}
-```
-
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
 ## Custom Builds
 Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:

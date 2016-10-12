@@ -1,11 +1,14 @@
 {
-  "name": "animate.css",
-  "main": "./animate.css",
+  "name": "polymer.animate.css",
+  "main": "./polymer.animate.css.html",
   "ignore": [
     ".*",
     "*.yml",
     "Gemfile",
     "Gemfile.lock",
     "*.md"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
 }
