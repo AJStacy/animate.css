@@ -13,6 +13,7 @@
   "style": "./bower_components/animate.css/animate.css",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-nunjucks": "^2.3.0"
+    "gulp-nunjucks": "^2.3.0",
+    "gulp-rename": "^1.2.2"
   }
 }
