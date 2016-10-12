@@ -27,7 +27,7 @@ $ bower install polymer.animate.css --save
 
 3. Finally you need to add one of the following classes:
 
-  * `bounce`
+  * `bounce_`
   * `flash`
   * `pulse`
   * `rubberBand`
@@ -37,59 +37,59 @@ $ bower install polymer.animate.css --save
   * `tada`
   * `wobble`
   * `jello`
-  * `bounceInBase`
+  * `bounceIn_`
   * `bounceInDown`
   * `bounceInLeft`
   * `bounceInRight`
   * `bounceInUp`
-  * `bounceOutBase`
+  * `bounceOut_`
   * `bounceOutDown`
   * `bounceOutLeft`
   * `bounceOutRight`
   * `bounceOutUp`
-  * `fadeInBase`
-  * `fadeInDown`
+  * `fadeIn_`
+  * `fadeInDown_`
   * `fadeInDownBig`
-  * `fadeInLeft`
+  * `fadeInLeft_`
   * `fadeInLeftBig`
-  * `fadeInRight`
+  * `fadeInRight_`
   * `fadeInRightBig`
-  * `fadeInUp`
+  * `fadeInUp_`
   * `fadeInUpBig`
-  * `fadeOutBase`
-  * `fadeOutDown`
+  * `fadeOut_`
+  * `fadeOutDown_`
   * `fadeOutDownBig`
-  * `fadeOutLeft`
+  * `fadeOutLeft_`
   * `fadeOutLeftBig`
-  * `fadeOutRight`
+  * `fadeOutRight_`
   * `fadeOutRightBig`
-  * `fadeOutUp`
+  * `fadeOutUp_`
   * `fadeOutUpBig`
   * `flipInX`
   * `flipInY`
   * `flipOutX`
   * `flipOutY`
-  * `lightSpeedInBase`
-  * `lightSpeedOutBase`
-  * `rotateInBase`
+  * `lightSpeedIn`
+  * `lightSpeedOut`
+  * `rotateIn_`
   * `rotateInDownLeft`
   * `rotateInDownRight`
   * `rotateInUpLeft`
   * `rotateInUpRight`
-  * `rotateOutBase`
+  * `rotateOut_`
   * `rotateOutDownLeft`
   * `rotateOutDownRight`
   * `rotateOutUpLeft`
   * `rotateOutUpRight`
   * `hinge`
-  * `rollInBase`
-  * `rollOutBase`
-  * `zoomInBase`
+  * `rollIn`
+  * `rollOut`
+  * `zoomIn_`
   * `zoomInDown`
   * `zoomInLeft`
   * `zoomInRight`
   * `zoomInUp`
-  * `zoomOutBase`
+  * `zoomOut_`
   * `zoomOutDown`
   * `zoomOutLeft`
   * `zoomOutRight`
