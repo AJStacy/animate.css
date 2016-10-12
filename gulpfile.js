@@ -57,6 +57,9 @@ var words = [
   //fadeOutUp
   {original: "fadeOutUp ",replacement: "fadeOutUp_ "},
   {original: "fadeOutUp;",replacement: "fadeOutUp_;"},
+  //flip
+  {original: "flip ",replacement: "flip_ "},
+  {original: "flip;",replacement: "flip_;"},
   //rotateIn
   {original: "rotateIn ",replacement: "rotateIn_ "},
   {original: "rotateIn;",replacement: "rotateIn_;"},

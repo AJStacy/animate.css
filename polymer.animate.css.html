@@ -1765,7 +1765,7 @@
   animation-name: fadeOutUpBig;
 }
 
-@-webkit-keyframes flip {
+@-webkit-keyframes flip_ {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
@@ -1802,7 +1802,7 @@
   }
 }
 
-@keyframes flip {
+@keyframes flip_ {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
@@ -1839,11 +1839,11 @@
   }
 }
 
-.animated.flip {
+.animated.flip_ {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: flip;
-  animation-name: flip;
+  -webkit-animation-name: flip_;
+  animation-name: flip_;
 }
 
 @-webkit-keyframes flipInX {

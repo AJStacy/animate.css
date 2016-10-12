@@ -65,6 +65,7 @@ $ bower install polymer.animate.css --save
   * `fadeOutRightBig`
   * `fadeOutUp_`
   * `fadeOutUpBig`
+  * `flip_`
   * `flipInX`
   * `flipInY`
   * `flipOutX`
