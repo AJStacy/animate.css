@@ -37,17 +37,17 @@ $ bower install polymer.animate.css --save
   * `tada`
   * `wobble`
   * `jello`
-  * `bounceIn`
+  * `bounceInBase`
   * `bounceInDown`
   * `bounceInLeft`
   * `bounceInRight`
   * `bounceInUp`
-  * `bounceOut`
+  * `bounceOutBase`
   * `bounceOutDown`
   * `bounceOutLeft`
   * `bounceOutRight`
   * `bounceOutUp`
-  * `fadeIn`
+  * `fadeInBase`
   * `fadeInDown`
   * `fadeInDownBig`
   * `fadeInLeft`
@@ -56,7 +56,7 @@ $ bower install polymer.animate.css --save
   * `fadeInRightBig`
   * `fadeInUp`
   * `fadeInUpBig`
-  * `fadeOut`
+  * `fadeOutBase`
   * `fadeOutDown`
   * `fadeOutDownBig`
   * `fadeOutLeft`
@@ -69,27 +69,27 @@ $ bower install polymer.animate.css --save
   * `flipInY`
   * `flipOutX`
   * `flipOutY`
-  * `lightSpeedIn`
-  * `lightSpeedOut`
-  * `rotateIn`
+  * `lightSpeedInBase`
+  * `lightSpeedOutBase`
+  * `rotateInBase`
   * `rotateInDownLeft`
   * `rotateInDownRight`
   * `rotateInUpLeft`
   * `rotateInUpRight`
-  * `rotateOut`
+  * `rotateOutBase`
   * `rotateOutDownLeft`
   * `rotateOutDownRight`
   * `rotateOutUpLeft`
   * `rotateOutUpRight`
   * `hinge`
-  * `rollIn`
-  * `rollOut`
-  * `zoomIn`
+  * `rollInBase`
+  * `rollOutBase`
+  * `zoomInBase`
   * `zoomInDown`
   * `zoomInLeft`
   * `zoomInRight`
   * `zoomInUp`
-  * `zoomOut`
+  * `zoomOutBase`
   * `zoomOutDown`
   * `zoomOutLeft`
   * `zoomOutRight`

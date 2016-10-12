@@ -9,7 +9,6 @@
 
 // Utilities
 var fs = require('fs');
-var decamelize = require('decamelize');
 
 // Gulp
 var gulp = require('gulp');
@@ -18,9 +17,36 @@ var gulp = require('gulp');
 var njk = require('gulp-nunjucks');
 var rename = require('gulp-rename');
 
+var words = [
+  {
+    original: "In ",
+    replacement: "InBase "
+  },
+  {
+    original: "Out ",
+    replacement: "OutBase "
+  },
+  {
+    original: "In;",
+    replacement: "InBase;"
+  },
+  {
+    original: "Out;",
+    replacement: "OutBase;"
+  }
+];
+
+var replace = function(source, words) {
+  for (var i = 0; i < words.length; i++) {
+    source = source.split(words[i].original).join(words[i].replacement);
+  }
+  return source;
+};
+
 // Build the Polymer file from the source
 gulp.task('default', function() {
-  var fileContent = decamelize(fs.readFileSync("./bower_components/animate.css/animate.css", "utf8"), '');
+  var fileContent = fs.readFileSync("./bower_components/animate.css/animate.css", "utf8");
+  fileContent = replace(fileContent,words);
   return gulp.src('source/polymer-template.html')
     .pipe(njk.compile({css: fileContent}))
     .pipe(rename('polymer.animate.css.html'))
